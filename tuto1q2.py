@@ -19,7 +19,3 @@ mydf.rename(columns={'Genre':'Gender'}, inplace=True)
 mydf.sample(n=5)
 
 sns.regplot(data = mydf, x = 'Annual_Income_(k$)', y = 'Spending_Score');
-
-plt.figure(figsize=(10,8), dpi =500)
-sns.heatmap(corr,annot=True,fmt=".2f", linewidth=.5)
-plt.show()
