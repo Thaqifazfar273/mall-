@@ -18,18 +18,6 @@ mydf=pd.read_csv('mall_customer.csv')
 mydf.rename(columns={'Genre':'Gender'}, inplace=True)
 mydf.sample(n=5)
 
-"""!pip install sweetviz"""
-
-"""# importing sweetviz library
-import sweetviz as sv
-
-#analyzing the dataset
-advert_report = sv.analyze(mydf)
-
-#display the report
-advert_report.show_html('Advertising.html')"""
-
-"""advert_report.show_notebook()"""
 
 sns.regplot(data = mydf, x = 'Annual_Income_(k$)', y = 'Spending_Score');
 
